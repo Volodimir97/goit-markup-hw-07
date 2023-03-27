@@ -257,7 +257,7 @@ header {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../img/price/heromob.webp);
+    url(../img/price/heromob1.webp);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -266,22 +266,56 @@ header {
   padding: 112px 0px;
   margin: 0 auto;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../img/price/heromob2x.webp");
+  }
+}
 @media only screen and (min-width: 481px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../img/price/herotabl.webp);
+      url(../img/price/herotabl1.webp);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../img/price/herotabl2x.webp");
+    }
   }
 }
+
 @media only screen and (min-width: 769px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../img/price/peopleoffice.jpg);
+      url(../img/price/herodesk@1.webp);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-width: 469px) (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../img/price/herodesk@2x.webp");
+    }
   }
 }
 
@@ -1241,15 +1275,12 @@ header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  color: var(--primary-text-color);
+  color: var(--accent-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-tel:focus,
-.mobile-tel:hover {
-  color: var(--accent-color);
-}
+
 .mobile-email {
   flex: none;
   order: 1;
