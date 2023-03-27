@@ -22,17 +22,16 @@
 <body>
     <!-- Hedear -->
     <header>
-        <div class="container header-container ">
+        <div class="container ">
+            <div class="header-container">
+                <a href="index.html" class="link  logo logo-mob">WEB<span class="logo-part">STUDIO</span></a>
+                <button class="mobile-but js-open-menu" type="button">
+                    <svg class="burger-icon" width="30px" height="30px">
+                        <use href="./img/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
 
-            <nav>
-                <div class="head-item">
-                    <a href="index.html" class="link logo">WEB<span class="logo-part">STUDIO</span></a>
-                    <button class="mobile-but js-open-menu" type="button">
-                        <svg class="burger-icon" width="30px" height="30px">
-                            <use href="./img/icons.svg#icon-menu"></use>
-                        </svg>
-
-                    </button>
+                <nav>
                     <ul class="list nav">
                         <li>
                             <a href="index.html" class="list nav-link active ">Studio</a>
@@ -45,23 +44,22 @@
                             <a href="#" class="list nav-link ">Contacts</a>
                         </li>
                     </ul>
-                </div>
-
-            </nav>
-            <address class="address">
-
-                <ul class=" list contact">
-                    <li>
-                        <a href="mailto:info@devstudio.com" class="list contact-link">info@devstudio.com</a>
-                    </li>
-                    <li>
-                        <a href="tel:+110001111111" class="list contact-link">+11 (000) 111-11-11</a>
-                    </li>
-                </ul>
-
-            </address>
+                </nav>
 
 
+                <address class="address">
+                    <ul class=" list contact">
+                        <li>
+                            <a href="mailto:info@devstudio.com" class=" contact-link">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+110001111111" class=" contact-link">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>
+
+                </address>
+
+            </div>
         </div>
 
     </header>
@@ -483,39 +481,38 @@
         </div>
     </div>
 
-    <div class=" menu-mobile js-menu-container ">
-        <div>
-            <button class="menu-mobile-but js-close-menu">
-                <svg class="" width="18px" height="24px">
-                    <use class="checked" href="./img/icons.svgicon-checked"> </use>
+    <div class="  mobile-menu js-menu-container ">
+        <button class=" mobail-menu-close js-close-menu">
+            <svg class="modal-icon" width="8" height="8">
+                <use href="./img/icons.svg#icon-close-black"></use>
+            </svg>
+        </button>
 
-                </svg>
-            </button>
+        <ul class="list modal-list">
+            <li>
 
-            <ul class="list mobile-list-link">
-                <li>
+                <a href="index.html" class="list mobile-link ">Studio</a>
+            </li>
+            <li>
+                <a href="portfolio.html" class="list mobile-link">Portfolio</a>
 
-                    <a href="index.html" class="mobile-link ">Studio</a>
-                </li>
-                <li>
-                    <a href="portfolio.html" class="mobile-link">Portfolio</a>
+            </li>
+            <li>
+                <a href="#" class="list mobile-link ">Contacts</a>
+            </li>
+        </ul>
 
-                </li>
-                <li>
-                    <a href="#" class="mobile-link ">Contacts</a>
-                </li>
-            </ul>
-        </div>
-        <div>
+        <div class="modal-mobile">
 
             <address>
-                <ul class="mobile-address">
+                <ul class="list mobile-address">
                     <li>
-                        <a href="mailto:info@devstudio.com" class="list mobile-address-link">info@devstudio.com</a>
+                        <a href="tel:+110001111111" class="list  mobile-tel">+11 (000) 111-11-11</a>
                     </li>
                     <li>
-                        <a href="tel:+110001111111" class="list mobile-address-link">+11 (000) 111-11-11</a>
+                        <a href="mailto:info@devstudio.com" class="list mobile-email">info@devstudio.com</a>
                     </li>
+
                 </ul>
             </address>
             <ul class="list mobile-list-icon">
@@ -550,8 +547,10 @@
                 </li>
             </ul>
         </div>
-
     </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
