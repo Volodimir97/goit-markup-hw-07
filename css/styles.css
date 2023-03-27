@@ -68,7 +68,6 @@ header {
   max-width: 480px;
   padding-left: 16px;
   padding-right: 16px;
-  outline: 2px solid tomato;
 }
 .section {
   padding-top: 96px;
@@ -258,7 +257,7 @@ header {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../img/price/peopleoffice.jpg);
+    url(../img/price/heromob.webp);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -267,6 +266,25 @@ header {
   padding: 112px 0px;
   margin: 0 auto;
 }
+@media only screen and (min-width: 481px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/price/herotabl.webp);
+  }
+}
+@media only screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/price/peopleoffice.jpg);
+  }
+}
+
 .hero-title {
   padding: auto;
   font-size: 36px;
@@ -674,10 +692,9 @@ header {
 .footer-list1 {
   margin-left: auto;
   margin-right: auto;
-  width: 268px;
+  max-width: 268px;
   padding: 0px;
   margin-bottom: 72px;
-  outline: 2px solid tomato;
 }
 .logo-part-foot {
   color: var(--secondory-accent-color);
@@ -692,8 +709,7 @@ header {
 }
 .foot-div {
   display: block;
-
-  outline: 2px solid tomato;
+  flex-direction: center;
 }
 /* foot-footer */
 @media only screen and (min-width: 768px) {
@@ -722,7 +738,9 @@ header {
 }
 /* foot2 */
 .foot-content {
-  padding-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 210px;
 }
 
 .footer-text {
@@ -765,6 +783,7 @@ header {
 @media only screen and (min-width: 768px) {
   .foot-content {
     padding-left: 0px;
+    margin-left: 0px;
   }
   .footer-text {
     margin-left: 0px;
@@ -875,6 +894,7 @@ header {
 .socials {
   display: flex;
   align-items: center;
+
   gap: 24px;
 }
 
