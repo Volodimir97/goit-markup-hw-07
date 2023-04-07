@@ -85,9 +85,9 @@ header {
   display: flex;
 }
 
-.contact {
+/* .contact {
   display: none;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -99,8 +99,6 @@ header {
     padding-right: 16px;
   }
   .contact {
-    display: block;
-
     padding-top: 16px;
   }
 }
@@ -219,13 +217,11 @@ header {
 .address {
   margin-left: auto;
   display: none;
-  /* padding-top: 16px; */
 }
 .contact-link {
   display: block;
   font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+
   list-style: none;
   text-decoration: none;
 
@@ -242,11 +238,17 @@ header {
 @media only screen and (min-width: 768px) {
   .address {
     display: flex;
+
     margin-left: 0;
   }
   .contact-link {
-    font-weight: 400;
     letter-spacing: 0.04em;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .contact > li:first-child {
+    margin-bottom: 12px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -254,7 +256,12 @@ header {
     margin-left: auto;
   }
   .contact-link {
+    font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
+  }
+  .contact > li:first-child {
+    margin-bottom: 0px;
   }
 }
 /* MAIN */
